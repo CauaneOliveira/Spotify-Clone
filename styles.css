@@ -1,3 +1,8 @@
+/* COLORS
+    bg2: ##090909
+    bg3: #121212
+*/
+
 body {
     background-color: #000;
 }
@@ -15,7 +20,7 @@ body {
 }
 
 .sidebar_nav, .sidebar_nav_inf, .logo {
-    background-color: #121212;
+    background-color: #090909;
     border-radius: 8px;
     padding: 16px;
 }
