@@ -7,38 +7,54 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">   
     
-    <!-- Links para trazer os ícones via CDN -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"/>
-
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
 </head>
+
 <body>
-    <div class="sidebar">
-        <nav class="sidebar_nav">
-            <div class="logo">
-                <a href="">
-                    <img src="./assets/icons/logo-spotify.png" alt="logo-spotify">
-                </a>
-            </div>
-            <div>
+    <div class="container_left">
+        <!-- Sidebar Superior -->
+        <aside class="sidebar">
+            <nav class="sidebar_nav">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./assets/icons/logo-spotify.png" alt="Spotify Logo">
+                    </a>
+                </div>
                 <ul>
                     <li>
-                        <a href="">
-                            <span class="fa fa-home"></span>
-                            <span>Inicio</span>
+                        <a href="#">
+                            <i class="fa fa-home"></i>
+                            <span>Início</span>
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            <span class="fa fa-search"></span>
+                        <a href="#">
+                            <i class="fa fa-search"></i>
                             <span>Buscar</span>
                         </a>
                     </li>
                 </ul>
-            </div>
-        </nav>
-    </div>
+            </nav>
+        </aside>
 
-    
+        <!-- Sidebar Inferior -->
+        <aside class="sidebar_inf">
+            <nav class="sidebar_nav_inf">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-book"></i>
+                            <span>Minha Biblioteca</span>
+                        </a>
+                        <a class="add-biblio" href="#">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+    </div>
 </body>
 </html>

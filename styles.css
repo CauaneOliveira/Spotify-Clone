@@ -1,46 +1,49 @@
-body{
+/* COLORS
+    bg2: ##090909
+    bg3: #121212
+*/
+
+body {
     background-color: #000;
 }
-.sidebar{
+.container_left {
     position: fixed;
+    flex-direction: column;
+}
+
+.sidebar, .sidebar_inf {
     top: 0;
     left: 0;
     bottom: 0;
-    padding: 12px;
     width: 300px;
-}
-.sidebar_nav{
-    background-color: #121212;
-    border-radius: 8px;
-    padding: 16px 0 0 16px;
+    padding: 12px;
 }
 
-.logo{
-    background: #121212;
-    display: flex;
+.sidebar_nav, .sidebar_nav_inf, .logo {
+    background-color: #090909;
     border-radius: 8px;
-    padding: 16px 0 0 16px;
+    padding: 16px;
 }
 
-.sidebar_nav .logo img{
+.logo img {
     width: 80px;
 }
-
-.sidebar nav ul{
-
+.sidebar nav ul, .sidebar_inf nav ul {
     margin-top: 20px;
-    padding: 0 20px 10px 20px;
+    padding: 0 20px 10px;
 }
 
-.sidebar ul li{
-    padding: 10px 0px;
-
+.sidebar ul li, .sidebar_inf ul li {
+    padding: 10px 0;
 }
 
-.sidebar nav ul li a{
+.sidebar nav ul li a, .sidebar_inf nav ul li a {
     color: #b3b3b3;
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
-    font-family: "DM Sans",sans-serif;
+    font-family: "DM Sans", sans-serif;
+}
+.add-biblio {
+    margin-left: 80px;
 }
