@@ -5,6 +5,7 @@
 
 body {
     background-color: #000;
+    font-family: var(--font-dm-sans);
 }
 .container_left {
     position: fixed;
