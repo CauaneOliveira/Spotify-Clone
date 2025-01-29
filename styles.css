@@ -161,3 +161,39 @@ body {
     padding: 8px;
     border-radius: 20px;
 }
+.footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to right, #8A2387, #E94057, #F27121);
+    padding: 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.footer .text{
+    text-align: left;
+    color: white;
+    font-weight: 700;
+    justify-content: space-between;
+}
+
+.footer button {
+    background: white;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 40px;
+}
+
+.footer button:hover {
+    background: #ddd;
+}
+
