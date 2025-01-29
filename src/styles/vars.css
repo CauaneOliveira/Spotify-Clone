@@ -4,5 +4,9 @@
     --font-dm-sans: "DM Sans", sans-serif;
 
     /* colors */
+    --bg_frame: #090909;
+    --bg_frame2: #121212;
+    --color_text: #b3b3b3;
+    --color_hover: #ddd;
     
 }

@@ -4,6 +4,7 @@
     max-width: 800vw;
     height: 100vh;
     margin-left: 320px;
+    padding: 3px;
 }
 .header_nav{
     display: flex;
@@ -12,7 +13,7 @@
     padding: 16px;
     margin: 10px;
     border-radius: 8px;
-    background-color: #121212;
+    background-color: var(--bg_frame);
 }
 .navigation{
     display: flex;
@@ -38,10 +39,8 @@
 }
 
 .header_login{
-
     display: flex;
     align-items: center;
-
 }
 
 .header_search{
@@ -50,7 +49,7 @@
     width: 364px;
     height: 48px;
     margin-left: 8px;
-    background-color: #242424;
+    background-color: var(--bg_frame2);
     border-radius: 500px;
     border: 1px solid transparent;
     
@@ -70,18 +69,47 @@
     white-space: nowrap;
     outline: none;
 }
-.header_login .sub{
+.header_login .sub button{
     color: #a7a7a7;
     font-size: 16px;
     font-weight: 700;
     background-color: transparent;
     margin-right: 32px;
 }
-.header_login .login{
+.header_login .login button{
     width: 100px;
     height: 48px;
     color: #000;
     font-size: 16px;
     font-weight: 700;
     border-radius: 40px;
+}
+.header_login .login button:hover {
+    background: var(--color_hover);
+}
+
+/*main*/
+
+.main-playlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: var(--bg_frame);
+    font-family: var(--font-dm-sans);
+    color: #fff;
+}
+.main-playlist h1{
+    padding: 16px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: auto;
+}
+.main-playlist p{
+    padding: 16px;
+    margin-right: auto;
+    font-weight: 500;
 }
