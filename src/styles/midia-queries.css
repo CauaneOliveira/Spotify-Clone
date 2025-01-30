@@ -1,0 +1,41 @@
+@media screen and (max-width: 1015px) {
+    .header_search {
+      /* display: none !important; */
+      width: auto !important;
+      display: none;
+    }
+  
+    /* .header__login .subscribe {
+      font-size: 12px !important;
+      padding: 10px !important;
+      margin-right: 5px !important;
+    } */
+  
+    /* .offer__list-item {
+      grid-template-columns: 1fr 1fr !important;
+    } */
+  }
+  
+  @media screen and (max-width: 375px) {
+    .main-playlist {
+      display: none;
+    }
+  
+    .main-playlist {
+      width: 100%; /* Ocupa toda a largura disponível */
+      height: auto; /* Altura automática, ajusta conforme o conteúdo */
+    }
+  
+    .sidebar {
+      width: 342px;
+    }
+  
+    .over-list-items {
+      grid-template-columns: 1fr;
+    }
+  
+    .scroll-container {
+      overflow-y: visible;
+    }
+  
+  }
