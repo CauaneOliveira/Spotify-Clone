@@ -2,8 +2,11 @@ const resultArtist = document.getElementById("result-artist");
 const playlistContainer = document.getElementById("result-playlists");
 const searchInput = document.getElementById("search-input");
 
+let debounceTimer;
+
 function requestApi(searchTerm) {
   console.log("Buscando por:", searchTerm);
+
 
   if (!searchTerm.trim()) {
     resultArtist.classList.add("hidden");
@@ -15,23 +18,20 @@ function requestApi(searchTerm) {
     .then((response) => response.json())
     .then((results) => {
       console.log("Resultados da API:", results);
-      displayResults(results, searchTerm);
-    })
+      displayResults(results, searchTerm);})
     .catch((error) => {
-      console.error("Erro na requisição:", error);
-    });
+      console.error("Erro na requisição:", error);});
 }
 
 function displayResults(results, searchTerm) {
   hidePlaylists();
-  resultArtist.innerHTML = '';
-
+  resultArtist.innerHTML = ''; 
 
   const filteredResults = results.filter(artist => {
     return artist.name.toLowerCase().includes(searchTerm.toLowerCase());
   });
 
-  console.log("Resultados filtrados:", filteredResults);
+  console.log("Resultados filtrados:", filteredResults); 
 
   if (filteredResults.length === 0) {
     resultArtist.innerHTML = "<p>Nenhum artista encontrado.</p>";
@@ -39,7 +39,10 @@ function displayResults(results, searchTerm) {
     return;
   }
 
-  filteredResults.forEach((element) => {
+  const limitedResults = filteredResults.slice(0, 10);
+
+
+  limitedResults.forEach((element) => {
     const artistCard = createArtistCard(element);
     resultArtist.appendChild(artistCard);
   });
@@ -73,14 +76,19 @@ function hidePlaylists() {
 }
 
 searchInput.addEventListener("input", function () {
-  const searchTerm = searchInput.value.trim().toLowerCase();
-  console.log("Termo de pesquisa:", searchTerm);
+  clearTimeout(debounceTimer);
 
-  if (searchTerm === "") {
+  const searchTerm = searchInput.value.trim().toLowerCase();
+  console.log("Termo de pesquisa:", searchTerm); 
+
+
+  if (searchTerm.length < 2) {
     resultArtist.classList.add("hidden");
     playlistContainer.classList.remove("hidden");
     return;
   }
 
-  requestApi(searchTerm);
+  debounceTimer = setTimeout(() => {
+    requestApi(searchTerm); 
+  }, 300);
 });

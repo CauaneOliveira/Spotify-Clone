@@ -8,5 +8,11 @@
     --bg_frame2: #121212;
     --color_text: #b3b3b3;
     --color_hover: #ddd;
-    
+
+
+    --bg-icon: #131313;
+    --bg-top-bar: #61616142;
+    --grid-gap: 24px;
+    --column-count: 5;
+
 }
