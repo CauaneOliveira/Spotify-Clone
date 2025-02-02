@@ -1,5 +1,5 @@
 body {
-    background-color: #000;
+    background: var(--bg);
     font-family: var(--font-dm-sans);
 }
 .container_left {
@@ -12,11 +12,11 @@ body {
     left: 0;
     bottom: 0;
     width: 300px;
-    padding: 12px;
+    padding: 12px; 
 }
 
 .sidebar_nav, .sidebar_div,  .logo {
-    background-color: var(--bg_frame);
+    background: var(--bg_frame);
     border-radius: 8px;
     padding: 16px;
 }
@@ -41,7 +41,7 @@ body {
 }
 
 .sidebar_div{
-    background-color: var(--bg_frame);
+    background: var(--bg_frame);
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
@@ -128,6 +128,11 @@ body {
     border: 0px;
     width: 113px;
 }
+
+.section-playlist-content button:hover{
+    background: var(--color_hover);
+
+}
 .cookies{
     margin: 25px 20px;
 }
@@ -154,12 +159,17 @@ body {
     padding: 8px;
     border-radius: 20px;
 }
+
+.languages button:hover{
+    background: #87878770;
+}
+
 .footer {
     display: flex;
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: linear-gradient(to right, #8A2387, #E94057, #F27121);
+    background: linear-gradient(to right, #000000, #a09193c2, #ff0000);
     padding: 15px 20px;
     justify-content: space-between;
     align-items: center;

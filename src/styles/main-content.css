@@ -13,7 +13,7 @@
     padding: 16px;
     margin: 10px;
     border-radius: 8px;
-    background-color: var(--bg_frame);
+    background: var(--bg_frame);
 }
 .navigation{
     display: flex;
@@ -97,7 +97,7 @@
     padding-top: 16px;
     margin: 10px;
     border-radius: 8px;
-    background-color: var(--bg_frame);
+    background: var(--bg_frame);
     font-family: var(--font-dm-sans);
     color: #fff;
     height: 68vh;

@@ -4,10 +4,12 @@
     --font-dm-sans: "DM Sans", sans-serif;
 
     /* colors */
-    --bg_frame: #090909;
-    --bg_frame2: #121212;
+    --bg:linear-gradient(to right, #bb0505, #da6a1f, #f2cc21,#2140f2,#4e10a0,#660a72);
+    --bg_frame: linear-gradient(to right, #250000, #49240b, #53460d,#091038,#15052b,#220425);
+    --bg_frame2: #63616183;
     --color_text: #b3b3b3;
-    --color_hover: #ddd;
+    /*--color_hover: #ddd;*/
+    --color_hover: linear-gradient(to right, #25000077, #49240b7e, #53460d86,#0910387e,#15052b83,#22042579);
 
 
     --bg-icon: #131313;
