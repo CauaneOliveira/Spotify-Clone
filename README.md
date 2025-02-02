@@ -1,6 +1,7 @@
 # Spotify Clone 🎵
 
 Este projeto é um **clone do Spotify** desenvolvido durante a **Imersão Alura**, com o objetivo de praticar e aprimorar conhecimentos em desenvolvimento web, incluindo HTML, CSS e JavaScript.
+#
 #Imersao-front-end-alura
 
 ## 🛠️ Tecnologias Utilizadas
