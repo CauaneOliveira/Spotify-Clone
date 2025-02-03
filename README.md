@@ -4,6 +4,9 @@ Este projeto é um **clone do Spotify** desenvolvido durante a **Imersão Alura*
 #
 #Imersao-front-end-alura
 
+![Imagem do Prototipo](https://github.com/user-attachments/assets/e51c7715-bd2a-41f3-a96a-8c52106a878d)
+
+
 ## 🛠️ Tecnologias Utilizadas
 
 - **HTML5**
